@@ -1,0 +1,132 @@
+/* Genel gövde */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #121212; /* koyu tema */
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Kart */
+.card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  max-width: 420px;
+  width: 95%;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 320px; /* fotoğrafı biraz büyüttük */
+  object-fit: cover;
+  object-position: center 40%; /* yüzü biraz aşağı kaydırır */
+}
+
+/* Banner yazı */
+.banner-text {
+  position: absolute;
+  bottom: 8px; /* yazıyı biraz daha aşağıya çekiyoruz */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.banner-text h2 {
+  margin: 0; /* boşluğu azalttık */
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.lang-switch {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.lang-switch button {
+  background: #ff0050;   /* buton rengin */
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.lang-switch button:hover {
+  background: #333;
+  transform: scale(1.1);
+}
+
+
+#ad-space img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Başlıklar */
+section h3 {
+  position: relative;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #fff;
+}
+
+section h3::before {
+  content: "";
+  display: inline-block;
+  width: 4px;          /* çizgi kalınlığı */
+  height: 20px;        /* çizgi uzunluğu */
+  background: #ff0050; /* buton renginde çizgi */
+  margin-right: 8px;   /* yazı ile aradaki boşluk */
+  vertical-align: middle;
+}
+
+/* Bölümler */
+section {
+  margin: 20px;
+}
+
+/* Link butonları */
+.link-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  background: #ff0050;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.link-btn:hover {
+  background: #333;
+}
